@@ -18,6 +18,8 @@ jobs:
     permissions:
       contents: read
       packages: write
+    env:
+      PACKAGE_SOURCE: 'https://nuget.pkg.github.com/derrysmith/index.json'
     steps:
       - name: Download NuGet packages
         uses: actions/download-artifact@v4
@@ -26,15 +28,4 @@ jobs:
           path: ./george-dotnet/pkg
       
       - name: Publish NuGet packages
-        run: ls -R ./george-dotnet/pkg
-        
-        
-        
-#        
-#        steps:
-#          - uses: actions/download-artifact@v4
-#            with:
-#              name: my-artifact
-#              path: your/destination/dir
-#          - name: Display structure of downloaded files
-#            run: ls -R your/destination/dir
+        run: dotnet nuget push ./george-dotnet/pkg/*.nupkg --skip-duplicate --api-key ${{ secrets.GITHUB_TOKEN }} --source ${{ env.PACKAGE_SOURCE }}
