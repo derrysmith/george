@@ -1,4 +1,6 @@
-﻿namespace DerrySmith.Extensions.Core.DateTime;
+﻿using DerrySmith.Extensions.Core.Entities;
+
+namespace DerrySmith.Extensions.Core.DateTime;
 
 /// <inheritdoc />
 public class DateTimeService : IDateTimeService
