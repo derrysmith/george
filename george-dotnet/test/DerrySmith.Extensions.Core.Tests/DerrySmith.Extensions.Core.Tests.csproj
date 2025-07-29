@@ -19,7 +19,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <ProjectReference Include="..\..\DerrySmith.Extensions.Core.Analyzers\DerrySmith.Extensions.Core.Analyzers.csproj" OutputItemType="Analyzer"/>
+	  <ProjectReference Include="..\..\src\DerrySmith.Extensions.Core.Analyzers\DerrySmith.Extensions.Core.Analyzers.csproj" OutputItemType="Analyzer"/>
 	  <ProjectReference Include="..\..\src\DerrySmith.Extensions.Core\DerrySmith.Extensions.Core.csproj" />
 	</ItemGroup>
 
