@@ -14,6 +14,7 @@ jobs:
   publish:
     name: publish nuget packages
     runs-on: ubuntu-latest
+    needs: compile
     permissions:
       contents: read
       packages: write

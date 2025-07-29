@@ -6,7 +6,7 @@ on:
       - main
     paths:
       - 'george-dotnet/**/*'
-      - '.github/workflows/george-dotnet.compile.yaml'
+      - '.github/workflows/george-dotnet.*.yaml'
   workflow_call:
 
 jobs:
@@ -16,5 +16,14 @@ jobs:
     steps:
       - name: checkout repository
         uses: actions/checkout@v4
-    
-    
+      
+      - name: configure dotnet
+        uses: actions/setup-dotnet@v4
+        with:
+          global-json-file: 'george-dotnet/global.json'
+      
+      - name: compile and test projects
+        run: dotnet test ./george-dotnet -c Release
+      
+      - name: package projects
+        run: dotnet pack ./george-dotnet -c Release -o ./george-dotnet/pkg --no-restore
