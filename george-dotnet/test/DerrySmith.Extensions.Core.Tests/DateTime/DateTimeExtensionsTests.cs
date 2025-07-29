@@ -16,4 +16,17 @@ public class DateTimeExtensionsTests
 		// assert
 		yesterday.ShouldBe(dtm.AddDays(-1));
 	}
+
+	[Fact]
+	public void Tomorrow_returnsOneDayAfter()
+	{
+		// arrange
+		var dtm = DateTimeOffset.Now;
+		
+		// act
+		var tomorrow = dtm.Tomorrow();
+		
+		// assert
+		tomorrow.ShouldBe(dtm.AddDays(1));
+	}
 }
