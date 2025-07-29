@@ -1,6 +1,4 @@
-﻿using DerrySmith.Extensions.Core.DateTime;
-
-namespace DerrySmith.Extensions.Core.Tests.DateTime;
+﻿namespace DerrySmith.Extensions.Core.Tests.DateTime;
 
 public class DateTimeServiceTests
 {
