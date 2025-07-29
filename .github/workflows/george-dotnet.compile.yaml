@@ -13,9 +13,6 @@ jobs:
   compile:
     name: compile nuget packages
     runs-on: ubuntu-latest
-    permissions:
-      contents: read
-      packages: write
     steps:
       - name: checkout repository
         uses: actions/checkout@v4
