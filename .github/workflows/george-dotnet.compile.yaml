@@ -1,0 +1,23 @@
+name: Compile NuGet Packages
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'george-dotnet/**/*'
+      - '.github/workflows/george-dotnet.compile.yaml'
+  workflow_call:
+
+jobs:
+  compile:
+    name: compile nuget packages
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: checkout repository
+        uses: actions/checkout@v4
+    
+    

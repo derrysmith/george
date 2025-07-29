@@ -9,6 +9,8 @@ on:
       - '.github/workflows/george-dotnet.publish.yaml'
 
 jobs:
+  compile:
+    uses: ./.github/workflows/george-dotnet.compile.yaml
   publish:
     name: publish nuget packages
     runs-on: ubuntu-latest
