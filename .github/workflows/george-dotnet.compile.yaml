@@ -14,16 +14,24 @@ jobs:
     name: compile nuget packages
     runs-on: ubuntu-latest
     steps:
-      - name: checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v4
       
-      - name: configure dotnet
+      - name: Configure dotnet
         uses: actions/setup-dotnet@v4
         with:
           global-json-file: 'george-dotnet/global.json'
       
-      - name: compile and test projects
+      - name: Compile and test projects
         run: dotnet test ./george-dotnet -c Release
       
-      - name: package projects
+      - name: Package projects
         run: dotnet pack ./george-dotnet -c Release -o ./george-dotnet/pkg --no-restore
+        
+      - name: Upload NuGet packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: george-nuget-packages
+          path: ./george-dotnet/pkg
+          overwrite: true
+          retention-days: 2
