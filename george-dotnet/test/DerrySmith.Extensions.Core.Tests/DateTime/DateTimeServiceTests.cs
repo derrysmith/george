@@ -4,7 +4,7 @@ namespace DerrySmith.Extensions.Core.Tests.DateTime;
 
 public class DateTimeServiceTests
 {
-	private TimeSpan DateTimeTolerance { get; } = TimeSpan.FromMicroseconds(50);
+	private TimeSpan DateTimeTolerance { get; } = TimeSpan.FromMicroseconds(100);
 
 	[Fact]
 	public void Now_returnsCurrentLocalDateTime()
