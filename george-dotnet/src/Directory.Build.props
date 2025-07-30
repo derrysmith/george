@@ -1,10 +1,11 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<Title>$(MSBuildProjectName)</Title>
-		<Version>1.0.5</Version>
+		<Version>1.0.6</Version>
 		<Authors>derrysmith</Authors>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/derrysmith/george</RepositoryUrl>
+		<PackageId>$(MSBuildProjectName)</PackageId>
 		<PackageProjectUrl>https://github.com/derrysmith/george</PackageProjectUrl>
 		<PackageLicenseUrl>https://github.com/derrysmith/george/license.md</PackageLicenseUrl>
 	</PropertyGroup>

@@ -7,7 +7,7 @@
 		<IsPackable>true</IsPackable>
 		<RootNamespace>DerrySmith.Extensions.Core</RootNamespace>
 		<EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
-		<IncludeBuildOutput>false</IncludeBuildOutput>
+		<IncludeBuildOutput>true</IncludeBuildOutput>
 	</PropertyGroup>
 
 	<ItemGroup>
