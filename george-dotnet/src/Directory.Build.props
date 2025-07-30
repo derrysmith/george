@@ -1,6 +1,12 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
-		<Version>1.0.3</Version>
+		<Version>1.0.4</Version>
+		<Authors>derrysmith</Authors>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/derrysmith/george</RepositoryUrl>
+		<Title>DerrySmith.Extensions.Core</Title>
+		<PackageProjectUrl>https://github.com/derrysmith/george</PackageProjectUrl>
+		<PackageLicenseUrl>https://github.com/derrysmith/george/license.md</PackageLicenseUrl>
 	</PropertyGroup>
 	
 	<!-- global dependencies for all projects -->
