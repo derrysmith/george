@@ -1,6 +1,4 @@
-using System;
-
-namespace DerrySmith.Extensions.Core.Entities;
+namespace DS.George.Extensions.Core.Entities;
 
 public static class EntityKeyExtensions
 {
@@ -9,10 +7,10 @@ public static class EntityKeyExtensions
 		var entityKeyRawValue = value;
 
 		if (!string.IsNullOrEmpty(prefix) && !value.StartsWith(prefix))
-			throw new ArgumentException($"Cannot parse '{value}', does not start with '{prefix}'.");
+			throw new System.ArgumentException($"Cannot parse '{value}', does not start with '{prefix}'.");
 
 		if (!string.IsNullOrEmpty(suffix) && !value.EndsWith(suffix))
-			throw new ArgumentException($"Cannot parse '{value}', does not end with '{suffix}'.");
+			throw new System.ArgumentException($"Cannot parse '{value}', does not end with '{suffix}'.");
 
 		if (!string.IsNullOrEmpty(prefix) && value.StartsWith(prefix))
 			entityKeyRawValue = entityKeyRawValue.Substring(prefix.Length);

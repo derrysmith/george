@@ -1,10 +1,7 @@
 ﻿<Solution>
   <Folder Name="/src/">
-    <Project Path="src\DerrySmith.Extensions.Core.Abstractions\DerrySmith.Extensions.Core.Abstractions.csproj" Type="Classic C#" />
-    <Project Path="src\DerrySmith.Extensions.Core.Analyzers\DerrySmith.Extensions.Core.Analyzers.csproj" Type="Classic C#" />
-    <Project Path="src\DerrySmith.Extensions.Core\DerrySmith.Extensions.Core.csproj" Type="Classic C#" />
-  </Folder>
-  <Folder Name="/test/">
-    <Project Path="test\DerrySmith.Extensions.Core.Tests\DerrySmith.Extensions.Core.Tests.csproj" Type="Classic C#" />
+    <Project Path="src\DS.George.Extensions.Core.Analyzers\DS.George.Extensions.Core.Analyzers.csproj" Type="Classic C#" />
+    <Project Path="src\DS.George.Extensions.Core.Common\DS.George.Extensions.Core.Common.csproj" Type="Classic C#" />
+    <Project Path="src\DS.George.Extensions.Core\DS.George.Extensions.Core.csproj" Type="Classic C#" />
   </Folder>
 </Solution>

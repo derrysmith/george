@@ -6,9 +6,9 @@ A set of cross-platform libraries for developing applications following Domain D
 > derrysmith/george
 	> george-dotnet
 		> src
-			> DerrySmith.Extensions.Core
-			> DerrySmith.Extensions.Core.Abstractions
-			> DerrySmith.Extensions.Core.Analyzers
+			> DS.George.Extensions.Core
+			> DS.George.Extensions.Core.Analyzers
+			> DS.George.Extensions.Core.Common
 	> george-nodejs
 ```
 

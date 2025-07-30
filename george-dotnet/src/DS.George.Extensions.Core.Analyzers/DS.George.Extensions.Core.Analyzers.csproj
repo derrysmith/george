@@ -5,9 +5,9 @@
 		<LangVersion>latest</LangVersion>
 		<Nullable>enable</Nullable>
 		<IsPackable>true</IsPackable>
-		<RootNamespace>DerrySmith.Extensions.Core</RootNamespace>
+		<RootNamespace>DS.George.Extensions.Core</RootNamespace>
 		<EnforceExtendedAnalyzerRules>true</EnforceExtendedAnalyzerRules>
-		<IncludeBuildOutput>true</IncludeBuildOutput>
+		<IncludeBuildOutput>false</IncludeBuildOutput>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -18,6 +18,10 @@
 
 	<ItemGroup>
 		<None Include="$(OutputPath)\$(AssemblyName).dll" Pack="true" PackagePath="analyzers/dotnet/cs" Visible="false"/>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\DS.George.Extensions.Core.Common\DS.George.Extensions.Core.Common.csproj" />
 	</ItemGroup>
 
 </Project>

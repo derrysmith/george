@@ -1,4 +1,4 @@
-namespace DerrySmith.Extensions.Core.Entities;
+﻿namespace DS.George.Extensions.Core.Entities;
 
 internal record EntityKey
 {

@@ -5,7 +5,7 @@ using System.Threading;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Text;
 
-namespace DerrySmith.Extensions.Core.Entities;
+namespace DS.George.Extensions.Core.Entities;
 
 [Generator]
 internal class EntityKeyGenerator : IIncrementalGenerator
