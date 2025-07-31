@@ -1,7 +1,7 @@
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
 	<PropertyGroup>
 		<Title>$(MSBuildProjectName)</Title>
-		<Version>1.1.2</Version>
+		<Version>1.1.3</Version>
 		<Authors>derrysmith</Authors>
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/derrysmith/george</RepositoryUrl>
